@@ -1,0 +1,371 @@
+body{
+    background-color: rgb(102, 201, 168)
+  }
+  @font-face {
+  font-family: Brandon Grotesque;
+  src: url('fonts/Brandon_bld.otf'); /* file name */
+  }
+  @font-face {
+  font-family: Futura;
+  src: url('fonts/futura_light_bt[1].ttf'); /* file name */
+  }
+  
+  @media only screen and (max-width: 800px) {
+    h1.title{
+      font-size: 45px;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    h1.title2{
+      font-size: 42px;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    h2.headers{
+      font-size: 35px;
+    }
+  }
+  @media only screen and (max-width: 800px) {
+    img.banner{
+      width: 75%;
+    }
+  }
+  .title{
+    padding: 30x;
+    margin: 20px;
+    text-align: center;
+    font-family: Brandon Grotesque;  
+    font-size: 70px;
+    animation: slideInFromBottom 3s ;
+    transition-duration: 1.0s;
+    color : rgb(255, 255, 255);
+  }
+  
+  .title2{
+    padding: 20x;
+    margin: 10px;
+    text-align: center;
+    font-family: Brandon Grotesque;  
+    font-size: 71px;
+    color: rgb(0, 0, 0);
+    animation: slideInFromBottom 5s ;
+  }
+  
+  header {
+    animation: 3s ease-out 0s 1 wait, 0.21s ease-out 3s 1 slideInFromBottom;
+  }
+
+  @keyframes wait {
+    from { transform: translateY(20px); }
+    to { transform: translateY(20px); }
+  }
+
+  @keyframes slideInFromBottom {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+  }
+  
+  
+  
+  .about{
+    padding: 20x;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin: 20px;
+    text-align: center;
+    font-family: Brandon Grotesque;
+    font-size: 40px;
+    color : white;
+   
+  }
+  .info{
+    font-family: Futura;
+    color : white;
+    width: 50%;
+    display: block;
+    margin: auto;
+    text-align: justify;
+    
+  }
+  
+  /* .centerimage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  } */
+  .partnerimage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .center-info{
+    text-align: center;
+    font-family: Futura;
+    /* padding-left: 350px;
+    padding-right: 350px; */
+    color : white;
+    width: 50%;
+    display: block;
+    margin: auto;
+  }
+  .tos{
+    font-family: Futura;
+    /* padding-left: 350px;
+    padding-right: 350px; */
+    color : white;
+    width: 50%;
+    display: block;
+    margin: auto;
+    
+  }
+  .email{
+    font-family: Futura;
+    /* padding-left: 350px;
+    padding-right: 350px; */
+    color : rgb(124, 124, 124);
+    width: 50%;
+    display: block;
+    margin: auto;
+    /* transition-duration: 0.6s ; */
+    
+  }
+  
+  .email:hover{
+    font-family: Futura;
+    /* padding-left: 350px;
+    padding-right: 350px; */
+    color : rgb(0, 0, 0);
+    width: 50%;
+    display: block;
+    margin: auto;
+    /* transition-duration: 0.6s ; */
+    
+  }
+  
+  .copy{
+    text-align: center;
+    font-family: Futura;
+    font-size: 11px;
+    color : rgb(0, 0, 0);
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 100px;
+    
+  }
+
+  .copy2{
+    text-align: center;
+    font-family: Brandon Grotesque;
+    font-size: 26px;
+    color : rgb(255, 251, 251);
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-bottom: 100px;
+    
+  }
+  
+  .headers{
+    text-align: center;
+    font-family: Brandon Grotesque;
+    font-size: 40px;
+    color : rgb(61, 24, 24);
+  }
+  
+  .navbar{
+    padding-top: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+    animation-duration: 1.0s;
+  }
+  .navbarlink{
+    font-family: Brandon Grotesque;
+    text-align: center;
+    padding-right: 30px;
+    font-size: 15px;
+  }
+  .navbarfooters{
+    font-family: Futura;
+    text-align: center;
+  }
+  .navbarfooter{
+    animation: slideInFromBottom 3s ;
+    transition-duration: 0.6s;
+    text-align: center;
+    font-family: Brandon Grotesque;
+    padding-right: 30px;
+    font-size: 11px;
+    color: rgb(0, 0, 0);
+    /* transition-duration: 0.6s ; */
+  }
+  .navbarfooter:link{
+    transition-duration: 0.6s;
+    animation: slideInFromBottom 3s ;
+    text-align: center;
+    font-family: Brandon Grotesque;
+    padding-right: 30px;
+    font-size: 11px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  }
+  
+  .navbarfooter:hover{
+    transition-duration: 0.6s;
+    text-align: center;
+    font-family: Brandon Grotesque;
+    padding-right: 30px;
+    font-size: 11px;
+    transition-timing-function: ease;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    /* transition-duration: 0.6s ; */
+  }
+  .navbarlink:link{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition-duration: 0.4s;
+    
+  }
+  .navbarlink:visited{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition-duration: 0.4s;
+  }
+  
+  .navbarlink:hover{
+    transition-duration: 1.0s;
+    
+    transition-timing-function: ease-out;
+    color: rgb(255, 255, 255);
+  }
+  
+  .footer:hover{
+    transition-duration: 0.6s;
+
+    transition-timing-function: ease-out;
+    color:rgb(255, 255, 255);
+  }
+  
+  .steps{
+    
+    font-family: Futura;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+  .step{
+    padding-bottom: 10px;
+    color : rgb(0, 0, 0);
+  }
+  
+  .banner{
+    width: 50%;
+    display: block;
+    width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+  
+  .bottom{
+    height: 100px;
+    width: auto;
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  .space{
+    height: 40px;
+  }
+  
+  /* .icon_area{
+    
+    width: 20px;
+    height: 20px;
+  }
+  .iconimage{
+    width: 50px;
+    height: 50px;
+    
+    margin-top: 15px;
+    margin-left: 300px;
+  }
+     */
+  .logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+  }
+  
+  .activeClass{
+    font-family: Brandon Grotesque;
+    text-align: center;
+    padding-right: 30px;
+    font-size: 15px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .activeClass:link{
+    text-decoration: none;
+  }
+  
+  .dropbtn {
+    /* transition-duration: 0.6s; */
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 16px;
+    font-family: Brandon Grotesque;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+  }
+  
+  .dropbtn:hover{
+    /* transition-duration: 0.6s; */
+    color: rgb(161, 20, 20);
+  }
+  
+  .dropdown {
+    position: relative;
+    font-family: Brandon Grotesque;
+    display: inline-block;
+    transition-duration: 0.6s;
+    border-radius: 10px;
+  }
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffffbd;
+    font-family: Brandon Grotesque;
+    min-width: 110px;
+    transition-duration: 0.6s;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 10px;
+  }
+  
+  .dropdown-content a {
+    color: rgb(0, 0, 0);
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Brandon Grotesque;
+    transition-duration: 0.6s;
+  }
+  
+  .dropdown-content a:hover {background-color: rgb(255, 255, 255); transition-duration: 0.6s; }
+  
+  .dropdown:hover .dropdown-content {display: block; transition-duration: 0.6s;}
+  
+  .dropdown:hover .dropbtn {background-color: #000000; transition-duration: 0.6s;}
+
+/*Extras*/
+
