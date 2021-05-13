@@ -36,7 +36,7 @@ body{
     text-align: center;
     font-family: Brandon Grotesque;  
     font-size: 70px;
-    animation: slideInFromBottom 3s ;
+    animation: float 6s ease-in-out infinite;
     transition-duration: 1.0s;
     color : rgb(255, 255, 255);
   }
@@ -82,9 +82,9 @@ body{
     font-family: Futura;
     color : white;
     width: 50%;
-    display: block;
+    display: -moz-stack;
     margin: auto;
-    text-align: justify;
+    text-align: center;
     
   }
   
@@ -176,10 +176,11 @@ body{
   }
   
   .navbar{
-    padding-top: 10px;
+    padding-top: 20px;
     text-align: center;
     padding-bottom: 20px;
     animation-duration: 1.0s;
+    background-color: paleturquoise;
   }
   .navbarlink{
     font-family: Brandon Grotesque;
@@ -193,7 +194,7 @@ body{
   }
   .navbarfooter{
     animation: slideInFromBottom 3s ;
-    transition-duration: 0.6s;
+    transition-duration: 0.3s;
     text-align: center;
     font-family: Brandon Grotesque;
     padding-right: 30px;
@@ -218,7 +219,7 @@ body{
     font-family: Brandon Grotesque;
     padding-right: 30px;
     font-size: 11px;
-    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(1, 0, 0, 1);
     color: rgb(0, 0, 0);
     text-decoration: none;
     /* transition-duration: 0.6s ; */
@@ -236,9 +237,9 @@ body{
   }
   
   .navbarlink:hover{
-    transition-duration: 1.0s;
+    transition-duration: 0.5s;
     
-    transition-timing-function: ease-out;
+    transition-timing-function: linear;
     color: rgb(255, 255, 255);
   }
   
@@ -247,6 +248,17 @@ body{
 
     transition-timing-function: ease-out;
     color:rgb(255, 255, 255);
+  }
+
+  .fadeInAnimation{
+    padding: 30x;
+    margin: 20px;
+    text-align: center;
+    font-family: Brandon Grotesque;  
+    font-size: 30px;
+    animation: slideInFromBottom 3s ;
+    transition-duration: 1.3s;
+    color : rgb(255, 255, 255);
   }
   
   .steps{
@@ -313,6 +325,21 @@ body{
   
   .activeClass:link{
     text-decoration: none;
+  }
+
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+      transform: translatey(0px);
+    }
   }
   
   .dropbtn {
