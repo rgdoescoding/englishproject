@@ -9,6 +9,10 @@ body{
   font-family: Futura;
   src: url('fonts/futura_light_bt[1].ttf'); /* file name */
   }
+  @font-face {
+    font-family: Brandon Grotesque medium;
+    src: url('fonts/Brandon_med.otf'); /* file name */
+  }
   
   @media only screen and (max-width: 800px) {
     h1.title{
@@ -85,7 +89,6 @@ body{
     display: -moz-stack;
     margin: auto;
     text-align: center;
-    
   }
   
   /* .centerimage{
@@ -151,9 +154,8 @@ body{
     color : rgb(0, 0, 0);
     width: 50%;
     display: block;
-    margin: auto;
+    margin: auto ;
     margin-bottom: 100px;
-    
   }
 
   .copy2{
@@ -180,7 +182,9 @@ body{
     text-align: center;
     padding-bottom: 20px;
     animation-duration: 1.0s;
+    animation: ease-in;
     background-color: paleturquoise;
+    border-radius: 30px;
   }
   .navbarlink{
     font-family: Brandon Grotesque;
@@ -198,6 +202,7 @@ body{
     text-align: center;
     font-family: Brandon Grotesque;
     padding-right: 30px;
+    margin: 20px;
     font-size: 11px;
     color: rgb(0, 0, 0);
     /* transition-duration: 0.6s ; */
@@ -214,13 +219,13 @@ body{
   }
   
   .navbarfooter:hover{
-    transition-duration: 0.6s;
+    transition-duration: 0.3s;
     text-align: center;
     font-family: Brandon Grotesque;
     padding-right: 30px;
     font-size: 11px;
-    transition-timing-function: cubic-bezier(1, 0, 0, 1);
-    color: rgb(0, 0, 0);
+    transition-timing-function: ease-in-out;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     /* transition-duration: 0.6s ; */
   }
@@ -331,14 +336,17 @@ body{
     0% {
       box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
       transform: translatey(0px);
+      border-radius: 30px;
     }
     50% {
       box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
       transform: translatey(-20px);
+      border-radius: 50px;
     }
     100% {
       box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
       transform: translatey(0px);
+      border-radius: 30px;
     }
   }
   
