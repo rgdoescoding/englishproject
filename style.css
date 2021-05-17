@@ -13,6 +13,10 @@ body{
     font-family: Brandon Grotesque medium;
     src: url('fonts/Brandon_med.otf'); /* file name */
   }
+  @font-face {
+    font-family: NYC;
+    src: url('fonts/ADAM.CG\ PRO.otf');
+  }
   
   @media only screen and (max-width: 800px) {
     h1.title{
@@ -49,7 +53,7 @@ body{
     padding: 20x;
     margin: 10px;
     text-align: center;
-    font-family: Brandon Grotesque;  
+    font-family: NYC;  
     font-size: 71px;
     color: rgb(0, 0, 0);
     animation: slideInFromBottom 5s ;
@@ -79,8 +83,7 @@ body{
     text-align: center;
     font-family: Brandon Grotesque;
     font-size: 40px;
-    color : white;
-   
+    color : white; 
   }
   .info{
     font-family: Futura;
@@ -97,11 +100,13 @@ body{
     margin-right: auto;
     width: 50%;
   } */
-  .partnerimage{
+  .image{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    margin-bottom: auto;
+    border: 2px solid paleturquoise;
+    width: 15%;
   }
   .center-info{
     text-align: center;
@@ -232,8 +237,8 @@ body{
   .navbarlink:link{
     text-decoration: none;
     color: rgb(0, 0, 0);
-    transition-duration: 0.4s;
-    
+    transition-duration: 1.0s;
+    animation: ease-in;
   }
   .navbarlink:visited{
     text-decoration: none;
@@ -242,14 +247,14 @@ body{
   }
   
   .navbarlink:hover{
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
     
     transition-timing-function: linear;
     color: rgb(255, 255, 255);
   }
   
   .footer:hover{
-    transition-duration: 0.6s;
+    transition-duration: 0.2s;
 
     transition-timing-function: ease-out;
     color:rgb(255, 255, 255);
@@ -297,6 +302,10 @@ body{
   
   .space{
     height: 40px;
+  }
+
+  .imagespace{
+    height: 200px;
   }
   
   /* .icon_area{
