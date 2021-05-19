@@ -108,6 +108,60 @@ body{
     border: 2px solid paleturquoise;
     width: 15%;
   }
+
+  /* EXPLANATION DESIGN FORMATTING */
+  .imagenemo{
+    display: block;
+    margin-left: 100px;
+    margin-right: 400px;
+    width: 15%;
+  }
+  .imageferd{
+    display: -moz-inline-stack;
+    margin-left: 100px;
+    margin-right: 400px;
+    width: 15%;
+  }
+  #container{
+    display: table;
+    height: 0px;
+    margin-left: 315px;
+    width: 200px;
+  }
+  .nemo-title{
+    padding: 0px;
+    text-align: left;
+    font-family: Brandon Grotesque;
+    font-size: 35px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .nemo-desc{
+    margin-left: 315px;
+    margin-right: 230px;
+    text-align: left;
+    font-family: Futura;
+    font-size: 12px;
+  }
+  
+  .ferdinand-title{
+    padding: 0px;
+    text-align: left;
+    font-family: Brandon Grotesque;
+    font-size: 35px;
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+  .ferdinand-desc{
+    margin-left: 315px;
+    margin-right: 230px;
+    text-align: left;
+    font-family: Futura;
+    font-size: 12px;
+  }
+
+
   .center-info{
     text-align: center;
     font-family: Futura;
@@ -265,7 +319,6 @@ body{
     margin: 20px;
     text-align: center;
     font-family: Brandon Grotesque;  
-    font-size: 30px;
     animation: slideInFromBottom 3s ;
     transition-duration: 1.3s;
     color : rgb(255, 255, 255);
@@ -305,9 +358,8 @@ body{
   }
 
   .imagespace{
-    height: 200px;
+    height: 100px;
   }
-  
   /* .icon_area{
     
     width: 20px;
