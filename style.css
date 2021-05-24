@@ -230,6 +230,41 @@ body{
   }
 /* END OF MOVIES STYLING */
 
+/* SHOWS STYLING */
+  .showsimage{
+    display: block;
+    margin-left: 100px;
+    margin-right: 400px;
+    width: 15%;
+  }
+
+  /* SHOWS EXPLANATION */
+  .show-title{
+    margin-left: 315px;
+    text-align: left;
+    font-family: Brandon Grotesque;
+    font-size: 35px;
+    color: black;
+  }
+  .show-title:link{
+    font-family: Brandon Grotesque;
+    font-size: 35px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out 1.2s;
+    color: rgb(255, 255, 255);
+  }
+  .show-title:hover{
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out 1.2s;
+    color: rgb(255, 255, 255);
+  }
+  .show-desc{
+    margin-left: 315px;
+    text-align: left;
+    font-family: Futura;
+    font-size: 16px;
+  }
+
   .center-info{
     text-align: center;
     font-family: Futura;
@@ -309,7 +344,7 @@ body{
     text-align: center;
     padding-bottom: 20px;
     animation-duration: 1.0s;
-    animation: ease-in;
+    animation: step-start;
     background-color: paleturquoise;
     border-radius: 30px;
   }
